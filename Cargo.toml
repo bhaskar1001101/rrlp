@@ -1,0 +1,21 @@
+[package]
+name = "rrlp"
+version = "0.1.0"
+edition = "2021"
+description = "A Rust implementation of Ethereum's Recursive Length Prefix (RLP)"
+license = "MIT"
+
+[dependencies]
+serde = "1.0.215"
+serde_json = "1.0.133"
+test-case = "3.3.1"
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+hex = "0.4.3"
+lazy_static = "1.5.0"
+test-case = "3.3.1"
+
+[[bench]]
+name = "rlp_benchmark"
+harness = false
